@@ -1,0 +1,333 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[${site.url}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 460
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 3
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "go_to_ContactUs_Page",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//a[contains(text(),'Contact Us')], using=xpath}"
+          ],
+          "result": "id: 0.8784768048954035-1",
+          "subLogs": [],
+          "duration": 16
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //a[contains(text(),'Contact Us')]",
+            "{\"id\":\"0.8784768048954035-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 537
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_EmailAddress",
+      "args": [
+        "[${email.invalid}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//input[@id='emailAddress'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-1",
+          "subLogs": [],
+          "duration": 38
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.xpath: //input[@id='emailAddress']",
+            "{\"id\":\"0.5739864280248264-1\",\"value\":[\"qasvu_testing.com\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 213
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click_SubmitButton",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//button[@id='btnSubmit'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-2",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //button[@id='btnSubmit']",
+            "{\"id\":\"0.5739864280248264-2\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 186
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_ErrorMessage",
+      "args": [
+        "[${error.message}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-3",
+          "subLogs": [],
+          "duration": 21
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.5739864280248264-3\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 43
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.5739864280248264-3]",
+          "subLogs": [],
+          "duration": 14
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-3",
+          "subLogs": [],
+          "duration": 10
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.5739864280248264-3\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 26
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-3",
+          "subLogs": [],
+          "duration": 12
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.5739864280248264-3\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 10
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_InvalidEmailErrorMessage",
+      "args": [
+        "[${email.invalid.error.message}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@id='emailAddressStatus'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-4",
+          "subLogs": [],
+          "duration": 17
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "By.xpath: //span[@id='emailAddressStatus']",
+            "{\"id\":\"0.5739864280248264-4\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@id='emailAddressStatus'], using=xpath}"
+          ],
+          "result": "[id: 0.5739864280248264-4]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@id='emailAddressStatus'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-4",
+          "subLogs": [],
+          "duration": 10
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@id='emailAddressStatus']",
+            "{\"id\":\"0.5739864280248264-4\"}"
+          ],
+          "result": "getElementText:Please enter a valid email address",
+          "subLogs": [],
+          "duration": 21
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@id='emailAddressStatus'], using=xpath}"
+          ],
+          "result": "id: 0.5739864280248264-4",
+          "subLogs": [],
+          "duration": 12
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@id='emailAddressStatus']",
+            "{\"id\":\"0.5739864280248264-4\"}"
+          ],
+          "result": "getElementText:Please enter a valid email address",
+          "subLogs": [],
+          "duration": 10
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 465,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStepPass",
+      "duration": 557,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Email Address \"qasvu_testing.com\"",
+      "type": "TestStepPass",
+      "duration": 257,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Click Submit Button",
+      "type": "TestStepPass",
+      "duration": 206,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the error message \"Please fill in all required fields.\"",
+      "type": "TestStepPass",
+      "duration": 143,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.",
+          "type": "Pass",
+          "screenshot": "",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "And Validate invalid email error message \"Please enter a valid email address\"",
+      "type": "TestStepPass",
+      "duration": 114,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.xpath: //span[@id='emailAddressStatus'] text should be Contains:Please enter a valid email address : Actual By.xpath: //span[@id='emailAddressStatus'] text is Please enter a valid email address",
+          "type": "Pass",
+          "screenshot": "",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}

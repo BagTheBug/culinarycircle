@@ -1,0 +1,25 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@try"
+        ],
+        "lineNo": 8,
+        "name": "Search for Recipe",
+        "referece": "src/main/resources/scenarios/Recipes.feature",
+        "resultFileName": "SearchForRecipe",
+        "sign": "src.main.resources.scenarios.Recipes.feature.Search for Recipe()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "startTime": 1539319839242,
+      "duration": 50823,
+      "result": "fail",
+      "passPer": 0.0
+    }
+  ]
+}

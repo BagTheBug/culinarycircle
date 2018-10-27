@@ -1,0 +1,72 @@
+{
+  "total": 1,
+  "pass": 1,
+  "fail": 0,
+  "skip": 0,
+  "classes": [
+    "com.qmetry.qaf.automation.step.client.Scenario"
+  ],
+  "envInfo": {
+    "browser-desired-capabilities": {
+      "browserName": "chrome",
+      "takesScreenshot": true,
+      "javascriptEnabled": true,
+      "version": "",
+      "platform": "ANY",
+      "cssSelectorsEnabled": true
+    },
+    "browser-actual-capabilities": {
+      "mobileEmulationEnabled": "false",
+      "hasTouchScreen": "false",
+      "platform": "XP",
+      "acceptSslCerts": "false",
+      "acceptInsecureCerts": "false",
+      "webStorageEnabled": "true",
+      "browserName": "chrome",
+      "takesScreenshot": "true",
+      "javascriptEnabled": "true",
+      "platformName": "XP",
+      "setWindowRect": "true",
+      "unexpectedAlertBehaviour": "",
+      "applicationCacheEnabled": "false",
+      "rotatable": "false",
+      "networkConnectionEnabled": "false",
+      "chrome": "{chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\\Users\\MULLAI~1\\AppData\\Local\\Temp\\scoped_dir244_9003}",
+      "takesHeapSnapshot": "true",
+      "pageLoadStrategy": "normal",
+      "unhandledPromptBehavior": "",
+      "databaseEnabled": "false",
+      "handlesAlerts": "true",
+      "version": "69.0.3497.100",
+      "browserConnectionEnabled": "false",
+      "nativeEvents": "true",
+      "locationContextEnabled": "true",
+      "cssSelectorsEnabled": "true"
+    },
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "13",
+      "qaf-Version": "2.1",
+      "qaf-Build-Time": "20-Feb-2018 00:19:29"
+    },
+    "run-parameters": {
+      "resources": "src/main/resources/common",
+      "baseurl": "",
+      "env.resources": "src/main/resources/common",
+      "webdriver.chrome.driver": "C:\\Users\\Mullai Chezhiyan\\eclipse-workspace\\chromedriver.exe",
+      "driver.name": "chromeDriver"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_181",
+      "os.arch": "amd64",
+      "host": "DESKTOP-9GHEFCC",
+      "os.name": "Windows 10",
+      "user.name": "Mullai Chezhiyan",
+      "os.version": "10.0"
+    }
+  },
+  "startTime": 1538886546815,
+  "endTime": 1538886547038
+}

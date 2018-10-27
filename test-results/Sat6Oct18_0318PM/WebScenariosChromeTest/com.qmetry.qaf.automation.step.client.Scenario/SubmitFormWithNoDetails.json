@@ -1,0 +1,168 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[https://www.culinarycircle.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 44044
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1136
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "go_to_ContactUs_Page",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//a[contains(text(),'Contact Us')], using=xpath}"
+          ],
+          "result": "[id: 0.9002777178865131-1]",
+          "subLogs": [],
+          "duration": 35
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//a[contains(text(),'Contact Us')]]",
+            "{\"id\":\"0.9002777178865131-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 2110
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click_SubmitButton",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//button[@id='btnSubmit'], using=xpath}"
+          ],
+          "result": "[id: 0.5337820778568321-1]",
+          "subLogs": [],
+          "duration": 37
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//button[@id='btnSubmit']]",
+            "{\"id\":\"0.5337820778568321-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 75
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_ErrorMessage",
+      "args": [
+        "[Please fill in all required fields.]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.5337820778568321-2]",
+          "subLogs": [],
+          "duration": 40
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "Using any of[xpath=//span[@name='errorMessageGeneral']]",
+            "{\"id\":\"0.5337820778568321-2\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 33
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.5337820778568321-2]",
+          "subLogs": [],
+          "duration": 30
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//span[@name='errorMessageGeneral']]",
+            "{\"id\":\"0.5337820778568321-2\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 86
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 48491,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStepPass",
+      "duration": 2203,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Click Submit Button",
+      "type": "TestStepPass",
+      "duration": 117,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the error message \"Please fill in all required fields.\"",
+      "type": "TestStepPass",
+      "duration": 195,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ]
+}

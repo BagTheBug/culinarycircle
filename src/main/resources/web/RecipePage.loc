@@ -1,0 +1,4 @@
+#Recipe Page
+recipePage.link = xpath=//a[contains(text(),'Recipes')]
+recipeLayout.class = xpath=//div[@class='small-screen-centered recipe-results']
+recipesDisplayed.list = xpath=//li[@class='cell column-block ng-scope']

@@ -1,0 +1,3 @@
+#Common
+siteSearch.textBox = xpath=//input[@id='siteSearch']
+siteSearch.icon = xpath=//a[@class='search-icon']

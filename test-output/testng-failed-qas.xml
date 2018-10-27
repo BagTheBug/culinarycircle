@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" name="Web Demo Suite" parallel="tests">
+  <test name="Web Scenarios Chrome Test">
+    <method-selectors>
+      <method-selector>
+        <script language="beanshell">
+          <![CDATA[testngMethod.getMethodName().equalsIgnoreCase("Submit form with valid details in required fields")||testngMethod.getMethodName().equalsIgnoreCase("Submit form with valid details in all fields")]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <parameter name="env.resources" value="src/main/resources/common"/>
+    <parameter name="webdriver.chrome.driver" value="C:\Users\Mullai Chezhiyan\eclipse-workspace\chromedriver.exe"/>
+    <parameter name="driver.name" value="chromeDriver"/>
+    <classes>
+      <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
+    </classes>
+  </test> <!-- Web Scenarios Chrome Test -->
+</suite> <!-- Web Demo Suite -->

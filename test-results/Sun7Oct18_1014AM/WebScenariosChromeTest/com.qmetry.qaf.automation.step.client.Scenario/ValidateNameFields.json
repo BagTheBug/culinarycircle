@@ -1,0 +1,350 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[https://www.culinarycircle.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 84357
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1179
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "go_to_ContactUs_Page",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//a[contains(text(),'Contact Us')], using=xpath}"
+          ],
+          "result": "[id: 0.28444479190731675-1]",
+          "subLogs": [],
+          "duration": 104
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//a[contains(text(),'Contact Us')]]",
+            "{\"id\":\"0.28444479190731675-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 2870
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_FirstName",
+      "args": [
+        "[Web239]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='firstName'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-1]",
+          "subLogs": [],
+          "duration": 57
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='firstName']]",
+            "{\"id\":\"0.7011508761333085-1\",\"value\":[\"Web239\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 224
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_LastName",
+      "args": [
+        "[QA23]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='lastName'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-2]",
+          "subLogs": [],
+          "duration": 41
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='lastName']]",
+            "{\"id\":\"0.7011508761333085-2\",\"value\":[\"QA23\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 76
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click_SubmitButton",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//button[@id='btnSubmit'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-3]",
+          "subLogs": [],
+          "duration": 23
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//button[@id='btnSubmit']]",
+            "{\"id\":\"0.7011508761333085-3\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 266
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_ErrorMessage",
+      "args": [
+        "[Please fill in all required fields.]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-4]",
+          "subLogs": [],
+          "duration": 39
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "Using any of[xpath=//span[@name='errorMessageGeneral']]",
+            "{\"id\":\"0.7011508761333085-4\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 22
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-4]",
+          "subLogs": [],
+          "duration": 17
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//span[@name='errorMessageGeneral']]",
+            "{\"id\":\"0.7011508761333085-4\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 25
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_FirstNameErrorMessage",
+      "args": [
+        "[Please enter your first name]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@id='firstNameStatus'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-5]",
+          "subLogs": [],
+          "duration": 25
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "Using any of[xpath=//span[@id='firstNameStatus']]",
+            "{\"id\":\"0.7011508761333085-5\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 17
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@id='firstNameStatus'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-5]",
+          "subLogs": [],
+          "duration": 9
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//span[@id='firstNameStatus']]",
+            "{\"id\":\"0.7011508761333085-5\"}"
+          ],
+          "result": "getElementText:Please enter your first name",
+          "subLogs": [],
+          "duration": 24
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_LastNameErrorMessage",
+      "args": [
+        "[Please enter your last name]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@id='lastNameStatus'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-6]",
+          "subLogs": [],
+          "duration": 21
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "Using any of[xpath=//span[@id='lastNameStatus']]",
+            "{\"id\":\"0.7011508761333085-6\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@id='lastNameStatus'], using=xpath}"
+          ],
+          "result": "[id: 0.7011508761333085-6]",
+          "subLogs": [],
+          "duration": 13
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//span[@id='lastNameStatus']]",
+            "{\"id\":\"0.7011508761333085-6\"}"
+          ],
+          "result": "getElementText:Please enter your last name",
+          "subLogs": [],
+          "duration": 21
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 89592,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStepPass",
+      "duration": 3091,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter First Name \"Web239\"",
+      "type": "TestStepPass",
+      "duration": 320,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Last Name \"QA23\"",
+      "type": "TestStepPass",
+      "duration": 125,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Click Submit Button",
+      "type": "TestStepPass",
+      "duration": 291,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the error message \"Please fill in all required fields.\"",
+      "type": "TestStepPass",
+      "duration": 110,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Validate the first name error message \"Please enter your first name\"",
+      "type": "TestStepPass",
+      "duration": 82,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the last name error message \"Please enter your last name\"",
+      "type": "TestStepPass",
+      "duration": 78,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ]
+}

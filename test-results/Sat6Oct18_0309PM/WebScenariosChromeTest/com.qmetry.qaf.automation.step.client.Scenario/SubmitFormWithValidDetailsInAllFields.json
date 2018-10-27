@@ -1,0 +1,231 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "Given Launch site \"${site.url}\"",
+      "args": [
+        "[]"
+      ],
+      "result": "Error: Step Not Found",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Go to Contact Us Page",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter First Name \"${firstName.valid}\"",
+      "args": [
+        "[QA]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Last Name \"${lastName.valid}\"",
+      "args": [
+        "[Web]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Email Address \"${email.valid}\"",
+      "args": [
+        "[qasvu_testing@cub.com]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter PhoneNumber \"${phoneNumber.valid}\"",
+      "args": [
+        "[9988776655]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Street Address \"${streetAddress}\"",
+      "args": [
+        "[128, Maple Road]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter City \"${city}\"",
+      "args": [
+        "[Minnesota]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Zipcode \"${zipCode}\"",
+      "args": [
+        "[55345]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter Shop \"${shop name}\"",
+      "args": [
+        "[${shop name}]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Time of Occurence \"${occurenceTime}\"",
+      "args": [
+        "[4PM CST]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter Best Time to Contact \"${contactTime}\"",
+      "args": [
+        "[10-12 AM CST]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter comments \"${comments}\"",
+      "args": [
+        "[This message is sent to validate the contact us form submission]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Validate the success message \"${success.message}\" and \"${thankyou.message}\"",
+      "args": [
+        "[Your message has been sent., THANK YOU!]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"${site.url}\" :: Not Found.",
+      "type": "Warn",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter First Name \"${firstName.valid}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Last Name \"${lastName.valid}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Email Address \"${email.valid}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter PhoneNumber \"${phoneNumber.valid}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Street Address \"${streetAddress}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter City \"${city}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Zipcode \"${zipCode}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter Shop \"${shop name}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Time of Occurence \"${occurenceTime}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter Best Time to Contact \"${contactTime}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter comments \"${comments}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the success message \"${success.message}\" and \"${thankyou.message}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "com.qmetry.qaf.automation.step.StepNotFoundException: Given Launch site \"${site.url}\"@src/main/resources/scenarios/ContactUs.feature#20 TestStep implementation not found. \n Please provide implementation or ensure 'step.provider.pkg' property value includes appropriate package.\r\n\tat .Given Launch site \"${site.url}\"(src/main/resources/scenarios/ContactUs.feature:20)\r\n"
+}

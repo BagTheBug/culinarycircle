@@ -1,0 +1,26 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@try",
+          "@contactUs"
+        ],
+        "lineNo": 15,
+        "name": "Submit form with no details",
+        "referece": "src/main/resources/scenarios/ContactUs.feature",
+        "resultFileName": "SubmitFormWithNoDetails",
+        "sign": "src.main.resources.scenarios.ContactUs.feature.Submit form with no details()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "startTime": 1538819281479,
+      "duration": 51312,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

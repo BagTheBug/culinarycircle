@@ -1,0 +1,418 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[https://www.culinarycircle.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 276
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 5
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "go_to_ContactUs_Page",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//a[contains(text(),'Contact Us')], using=xpath}"
+          ],
+          "result": "[id: 0.14967581278839726-1]",
+          "subLogs": [],
+          "duration": 13
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//a[contains(text(),'Contact Us')]]",
+            "{\"id\":\"0.14967581278839726-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 303
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_FirstName",
+      "args": [
+        "[QA]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='firstName'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-1]",
+          "subLogs": [],
+          "duration": 24
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='firstName']]",
+            "{\"id\":\"0.6932214499761407-1\",\"value\":[\"QA\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 66
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_LastName",
+      "args": [
+        "[Web]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='lastName'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-2]",
+          "subLogs": [],
+          "duration": 22
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='lastName']]",
+            "{\"id\":\"0.6932214499761407-2\",\"value\":[\"Web\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 60
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_EmailAddress",
+      "args": [
+        "[qasvu_testing@cub.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='emailAddress'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-3]",
+          "subLogs": [],
+          "duration": 19
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='emailAddress']]",
+            "{\"id\":\"0.6932214499761407-3\",\"value\":[\"qasvu_testing@cub.com\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 289
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_PhoneNumber",
+      "args": [
+        "[9988776655]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='txtPhone'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-4]",
+          "subLogs": [],
+          "duration": 27
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='txtPhone']]",
+            "{\"id\":\"0.6932214499761407-4\",\"value\":[\"9988776655\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 94
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_StreetAddress",
+      "args": [
+        "[128, Maple Road]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//textarea[@id='streetAddress'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-5]",
+          "subLogs": [],
+          "duration": 19
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//textarea[@id='streetAddress']]",
+            "{\"id\":\"0.6932214499761407-5\",\"value\":[\"128, Maple Road\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 124
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_city",
+      "args": [
+        "[Minnesota]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='city'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-6]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='city']]",
+            "{\"id\":\"0.6932214499761407-6\",\"value\":[\"Minnesota\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 89
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_ZipCode",
+      "args": [
+        "[55345]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='zipCode'], using=xpath}"
+          ],
+          "result": "[id: 0.6932214499761407-7]",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='zipCode']]",
+            "{\"id\":\"0.6932214499761407-7\",\"value\":[\"55345\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 65
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_Shop",
+      "args": [
+        "[${shop name}]"
+      ],
+      "result": "fail",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter Time of Occurence \"${occurenceTime}\"",
+      "args": [
+        "[4PM CST]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Enter Best Time to Contact \"${contactTime}\"",
+      "args": [
+        "[10-12 AM CST]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter comments \"${comments}\"",
+      "args": [
+        "[This message is sent to validate the contact us form submission]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Validate the success message \"${success.message}\" and \"${thankyou.message}\"",
+      "args": [
+        "[Your message has been sent., THANK YOU!]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 282,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStepPass",
+      "duration": 320,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter First Name \"QA\"",
+      "type": "TestStepPass",
+      "duration": 95,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Last Name \"Web\"",
+      "type": "TestStepPass",
+      "duration": 85,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Email Address \"qasvu_testing@cub.com\"",
+      "type": "TestStepPass",
+      "duration": 310,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter PhoneNumber \"9988776655\"",
+      "type": "TestStepPass",
+      "duration": 123,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Street Address \"128, Maple Road\"",
+      "type": "TestStepPass",
+      "duration": 147,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter City \"Minnesota\"",
+      "type": "TestStepPass",
+      "duration": 110,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter Zipcode \"55345\"",
+      "type": "TestStepPass",
+      "duration": 87,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter Shop \"${shop name}\"",
+      "type": "TestStepFail",
+      "screenshot": "img/SubmitFormWithValidDetailsInAllFields_xbc4h6q17ru419773.png",
+      "duration": 2,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "type": "Fail",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "Then Enter Time of Occurence \"${occurenceTime}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Enter Best Time to Contact \"${contactTime}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter comments \"${comments}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the success message \"${success.message}\" and \"${thankyou.message}\"",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "java.lang.NullPointerException\r\n\tat .And Enter Shop \"${shop name}\"(src/main/resources/scenarios/ContactUs.feature:29)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.getObject(JavaStep.java:395)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.getPropValue(JavaStep.java:390)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.processArgs(JavaStep.java:236)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:158)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n"
+}

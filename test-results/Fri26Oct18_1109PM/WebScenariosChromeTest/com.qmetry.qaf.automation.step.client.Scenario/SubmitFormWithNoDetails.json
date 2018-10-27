@@ -1,0 +1,205 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[${site.url}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 39739
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1146
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "go_to_ContactUs_Page",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//a[contains(text(),'Contact Us')], using=xpath}"
+          ],
+          "result": "id: 0.35812764050045187-1",
+          "subLogs": [],
+          "duration": 85
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //a[contains(text(),'Contact Us')]",
+            "{\"id\":\"0.35812764050045187-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 1218
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click_SubmitButton",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//button[@id='btnSubmit'], using=xpath}"
+          ],
+          "result": "id: 0.028186381384600168-1",
+          "subLogs": [],
+          "duration": 48
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //button[@id='btnSubmit']",
+            "{\"id\":\"0.028186381384600168-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 388
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_ErrorMessage",
+      "args": [
+        "[${error.message}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.028186381384600168-2",
+          "subLogs": [],
+          "duration": 27
+        },
+        {
+          "commandName": "isElementDisplayed",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.028186381384600168-2\"}"
+          ],
+          "result": "isElementDisplayed:true",
+          "subLogs": [],
+          "duration": 25
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "[id: 0.028186381384600168-2]",
+          "subLogs": [],
+          "duration": 91
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.028186381384600168-2",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.028186381384600168-2\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 328
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@name='errorMessageGeneral'], using=xpath}"
+          ],
+          "result": "id: 0.028186381384600168-2",
+          "subLogs": [],
+          "duration": 88
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "By.xpath: //span[@name='errorMessageGeneral']",
+            "{\"id\":\"0.028186381384600168-2\"}"
+          ],
+          "result": "getElementText:Please fill in all required fields.",
+          "subLogs": [],
+          "duration": 189
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 46996,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Contact Us Page",
+      "type": "TestStepPass",
+      "duration": 1415,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Click Submit Button",
+      "type": "TestStepPass",
+      "duration": 447,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the error message \"Please fill in all required fields.\"",
+      "type": "TestStepPass",
+      "duration": 923,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.",
+          "type": "Pass",
+          "screenshot": "",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}

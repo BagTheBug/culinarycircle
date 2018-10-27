@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" verbose="0" parallel="tests"
+	thread-count="100">
+	<listeners>
+	</listeners>
+
+	<test name="Web Scenarios Chrome Test" enabled="true">
+		<parameter name="webdriver.chrome.driver"
+			value="C:\Users\Mullai Chezhiyan\eclipse-workspace\chromedriver.exe" />
+		<parameter name="driver.name" value="chromeDriver" />
+		<parameter name="env.resources"
+			value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@contactUs" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+</suite>

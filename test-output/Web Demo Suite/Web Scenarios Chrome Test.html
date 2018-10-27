@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>TestNG:  Web Scenarios Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Web Scenarios Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 27 09:15:02 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>101 seconds (101877 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>@contactUs </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Submit form with valid details in all fields()'><b>Submit form with valid details in all fields</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Submit form with valid details in all fields)<br/>
+<a href="#Output-87258844" onClick='toggleBox("Output-87258844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-87258844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-87258844">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Street Address "128, Maple Road"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter City "Minnesota"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Zipcode "55345"</div><div  class="teststepfail"><span class="teststepfail-label">T </span>And Enter Shop "${shop name}" <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>null</div></div><div  class="teststep"><span class="teststep-label">T </span>Then Enter Time of Occurence "${occurenceTime}"</div><div  class="teststep"><span class="teststep-label">T </span>And Enter Best Time to Contact "${contactTime}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Enter comments "${comments}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Validate the success message "${success.message}" and "${thankyou.message}"</div></div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at .And Enter Shop &quot;${shop name}&quot;(src/main/resources/scenarios/ContactUs.feature:29)
+	at com.qmetry.qaf.automation.step.JavaStep.getObject(JavaStep.java:395)
+	at com.qmetry.qaf.automation.step.JavaStep.getPropValue(JavaStep.java:390)
+	at com.qmetry.qaf.automation.step.JavaStep.processArgs(JavaStep.java:236)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:158)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace87258844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace87258844'><pre>java.lang.NullPointerException
+	at .And Enter Shop &quot;${shop name}&quot;(src/main/resources/scenarios/ContactUs.feature:29)
+	at com.qmetry.qaf.automation.step.JavaStep.getObject(JavaStep.java:395)
+	at com.qmetry.qaf.automation.step.JavaStep.getPropValue(JavaStep.java:390)
+	at com.qmetry.qaf.automation.step.JavaStep.processArgs(JavaStep.java:236)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:158)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3ea</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Submit form with valid details in required fields()'><b>Submit form with valid details in required fields</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Submit form with valid details in required fields)<br/>
+<a href="#Output-1594650573" onClick='toggleBox("Output-1594650573", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1594650573" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1594650573">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the success message "Your message has been sent." and "THANK YOU!" <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)</div></div></div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)
+	at .Then Validate the success message &quot;${success.message}&quot; and &quot;${thankyou.message}&quot;(src/main/resources/scenarios/ContactUs.feature:11)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:296)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
+	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
+	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: Unsupported locator strategy: xpath 
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-9GHEFCC&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MULLAI~1\AppData\Local\Temp\scoped_dir7704_16679}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f958467296e70b1ac7b500bfde5a4256
+*** Element info: {Using=xpath , value= //span[@class=&apos;message&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:383)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementsByCustomStretegy(QAFExtendedWebDriver.java:547)
+	at com.qmetry.qaf.automation.ui.webdriver.ByCustom.findElements(ByCustom.java:63)
+	at org.openqa.selenium.By.findElement(By.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:171)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
+	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
+	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	... 4 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594650573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594650573'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)
+	at .Then Validate the success message &quot;${success.message}&quot; and &quot;${thankyou.message}&quot;(src/main/resources/scenarios/ContactUs.feature:11)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:296)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
+	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
+	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: Unsupported locator strategy: xpath 
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-9GHEFCC&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MULLAI~1\AppData\Local\Temp\scoped_dir7704_16679}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f958467296e70b1ac7b500bfde5a4256
+*** Element info: {Using=xpath , value= //span[@class=&apos;message&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:383)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementsByCustomStretegy(QAFExtendedWebDriver.java:547)
+	at com.qmetry.qaf.automation.ui.webdriver.ByCustom.findElements(ByCustom.java:63)
+	at org.openqa.selenium.By.findElement(By.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:171)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
+	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
+	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
+	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:781)
+	at org.testng.TestRunner.run(TestRunner.java:635)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	... 4 more
+</pre></div></td>
+<td>85</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Submit form with no details()'><b>Submit form with no details</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Submit form with no details)<br/>
+<a href="#Output-858435798" onClick='toggleBox("Output-858435798", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858435798" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858435798">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3e9</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Validate Name fields()'><b>Validate Name fields</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Validate Name fields)<br/>
+<a href="#Output-670174686" onClick='toggleBox("Output-670174686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-670174686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670174686">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "Web239"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "QA23"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate the first name error message "Please enter your first name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='firstNameStatus'] text should be Contains:Please enter your first name : Actual By.xpath: //span[@id='firstNameStatus'] text is Please enter your first name</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the last name error message "Please enter your last name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='lastNameStatus'] text should be Contains:Please enter your last name : Actual By.xpath: //span[@id='lastNameStatus'] text is Please enter your last name</div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3eb</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Validate Phone Number field()'><b>Validate Phone Number field</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Validate Phone Number field)<br/>
+<a href="#Output-1814899475" onClick='toggleBox("Output-1814899475", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1814899475" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1814899475">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9822"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid phone number error message "Please enter a valid phone number"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='txtPhoneStatus'] text should be Contains:Please enter a valid phone number : Actual By.xpath: //span[@id='txtPhoneStatus'] text is Please enter a valid phone number</div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3ed</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Validate email field()'><b>Validate email field</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Validate email field)<br/>
+<a href="#Output-701397449" onClick='toggleBox("Output-701397449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-701397449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701397449">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid email error message "Please enter a valid email address"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='emailAddressStatus'] text should be Contains:Please enter a valid email address : Actual By.xpath: //span[@id='emailAddressStatus'] text is Please enter a valid email address</div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3ec</td></tr>
+</table><p>
+</body>
+</html>

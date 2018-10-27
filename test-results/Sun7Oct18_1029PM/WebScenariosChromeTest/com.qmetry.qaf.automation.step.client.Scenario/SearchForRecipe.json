@@ -1,0 +1,375 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[https://www.culinarycircle.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 43028
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1175
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "goTo_RecipePage",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//a[contains(text(),'Recipes')], using=xpath}"
+          ],
+          "result": "[id: 0.8262534210126706-1]",
+          "subLogs": [],
+          "duration": 62
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//a[contains(text(),'Recipes')]]",
+            "{\"id\":\"0.8262534210126706-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 5454
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "get_RecipeAvailable",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[id: 0.4457987619980093-1, id: 0.4457987619980093-2, id: 0.4457987619980093-3, id: 0.4457987619980093-4, id: 0.4457987619980093-5, id: 0.4457987619980093-6, id: 0.4457987619980093-7, id: 0.4457987619980093-8]",
+          "subLogs": [],
+          "duration": 42
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//li[@class='cell column-block ng-scope']]",
+            "{\"id\":\"0.4457987619980093-3\"}"
+          ],
+          "result": "getElementText:FRUIT CRACKERS",
+          "subLogs": [],
+          "duration": 36
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "enter_RecipeNameInSearchBox",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[id: 0.4457987619980093-1, id: 0.4457987619980093-2, id: 0.4457987619980093-3, id: 0.4457987619980093-4, id: 0.4457987619980093-5, id: 0.4457987619980093-6, id: 0.4457987619980093-7, id: 0.4457987619980093-8]",
+          "subLogs": [],
+          "duration": 15
+        },
+        {
+          "commandName": "getElementText",
+          "args": [
+            "Using any of[xpath=//li[@class='cell column-block ng-scope']]",
+            "{\"id\":\"0.4457987619980093-3\"}"
+          ],
+          "result": "getElementText:FRUIT CRACKERS",
+          "subLogs": [],
+          "duration": 14
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//input[@id='siteSearch'], using=xpath}"
+          ],
+          "result": "[id: 0.4457987619980093-9]",
+          "subLogs": [],
+          "duration": 22
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "Using any of[xpath=//input[@id='siteSearch']]",
+            "{\"id\":\"0.4457987619980093-9\",\"value\":[\"FRUIT CRACKERS\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 137
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click_SearchIcon",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//a[@class='search-icon'], using=xpath}"
+          ],
+          "result": "[id: 0.4457987619980093-10]",
+          "subLogs": [],
+          "duration": 21
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "Using any of[xpath=//a[@class='search-icon']]",
+            "{\"id\":\"0.4457987619980093-10\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 30229
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "validate_RecipeSearchResult_ForParticularRecipe",
+      "args": [
+        "[]"
+      ],
+      "result": "fail",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 39
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 21
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 17
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 16
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 22
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 24
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=//li[@class='cell column-block ng-scope'], using=xpath}"
+          ],
+          "result": "[]",
+          "subLogs": [],
+          "duration": 18
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 52520,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Recipe Page",
+      "type": "TestStepPass",
+      "duration": 5640,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Get a recipe name available",
+      "type": "TestStepPass",
+      "duration": 92,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Enter the recipe name in search box",
+      "type": "TestStepPass",
+      "duration": 205,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Click Search icon",
+      "type": "TestStepPass",
+      "duration": 30252,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the recipes search result for particular recipe",
+      "type": "TestStepFail",
+      "screenshot": "img/SearchForRecipe_1b1k8o1lwko0q16710.png",
+      "duration": 15392,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected condition failed: Wait timeout for list of null with size 3 (tried for 15 second(s) with 1000 MILLISECONDS interval)\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: 'DESKTOP-9GHEFCC', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: driver.version: unknown",
+          "type": "Fail",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ],
+  "errorTrace": "org.openqa.selenium.TimeoutException: Expected condition failed: Wait timeout for list of null with size 3 (tried for 15 second(s) with 1000 MILLISECONDS interval)\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: 'DESKTOP-9GHEFCC', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: driver.version: unknown\r\n\tat .Then Validate the recipes search result for particular recipe(src/main/resources/scenarios/Recipes.feature:14)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:296)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)\r\n\tat com.qmetry.qaf.automation.ui.webdriver.ComponentListHandler.invoke(ComponentListHandler.java:83)\r\n\tat com.sun.proxy.$Proxy32.get(Unknown Source)\r\n\tat com.culinarycircle.pages.RecipePage.recipeNameDisplayed(RecipePage.java:53)\r\n\tat com.culinarycircle.steps.RecipesStepDef.get_RecipeAvailable(RecipesStepDef.java:30)\r\n\tat com.culinarycircle.steps.RecipesStepDef.validate_RecipeSearchResult_ForParticularRecipe(RecipesStepDef.java:45)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n"
+}

@@ -1,0 +1,151 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "launch_Site",
+      "args": [
+        "[${site.url}]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.culinarycircle.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 48769
+        },
+        {
+          "commandName": "maximizeCurrentWindow",
+          "args": [
+            "{}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1128
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "goTo_RecipePage",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//a[contains(text(),'Recipes')], using=xpath}"
+          ],
+          "result": "id: 0.41218365641560584-1",
+          "subLogs": [],
+          "duration": 24
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //a[contains(text(),'Recipes')]",
+            "{\"id\":\"0.41218365641560584-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 7662
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "get_RecipeAvailable",
+      "args": [
+        "[]"
+      ],
+      "result": "fail",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Enter the recipe name in search box",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And Click Search icon",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then Validate the recipes search result for particular recipe",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given Launch site \"https://www.culinarycircle.com/\"",
+      "type": "TestStepPass",
+      "duration": 56977,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Go to Recipe Page",
+      "type": "TestStepPass",
+      "duration": 7739,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Get a random recipe name available",
+      "type": "TestStepFail",
+      "screenshot": "img/SearchForRecipe_ewg4o0alnjr452086.png",
+      "duration": 3,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Unresolved compilation problem: \n\tThe method recipeNameDisplayed() is undefined for the type RecipePage\n",
+          "type": "Fail",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "Then Enter the recipe name in search box",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And Click Search icon",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then Validate the recipes search result for particular recipe",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "java.lang.Error: Unresolved compilation problem: \n\tThe method recipeNameDisplayed() is undefined for the type RecipePage\n\r\n\tat .And Get a random recipe name available(src/main/resources/scenarios/Recipes.feature:11)\r\n\tat com.culinarycircle.steps.RecipesStepDef.get_RecipeAvailable(RecipesStepDef.java:31)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n"
+}

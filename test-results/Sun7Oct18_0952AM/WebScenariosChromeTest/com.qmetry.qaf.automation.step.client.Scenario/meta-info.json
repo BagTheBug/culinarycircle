@@ -1,0 +1,26 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@try",
+          "@contactUs"
+        ],
+        "lineNo": 36,
+        "name": "Validate email field",
+        "referece": "src/main/resources/scenarios/ContactUs.feature",
+        "resultFileName": "ValidateEmailField",
+        "sign": "src.main.resources.scenarios.ContactUs.feature.Validate email field()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "startTime": 1538886171798,
+      "duration": 64961,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}
