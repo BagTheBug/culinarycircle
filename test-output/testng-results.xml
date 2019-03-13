@@ -1,72 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the success message "Your message has been sent." and "THANK YOU!" <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)</div></div></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div></div></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Street Address "128, Maple Road"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter City "Minnesota"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Zipcode "55345"</div><div  class="teststepfail"><span class="teststepfail-label">T </span>And Enter Shop "${shop name}" <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>null</div></div><div  class="teststep"><span class="teststep-label">T </span>Then Enter Time of Occurence "${occurenceTime}"</div><div  class="teststep"><span class="teststep-label">T </span>And Enter Best Time to Contact "${contactTime}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Enter comments "${comments}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Validate the success message "${success.message}" and "${thankyou.message}"</div></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "Web239"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "QA23"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate the first name error message "Please enter your first name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='firstNameStatus'] text should be Contains:Please enter your first name : Actual By.xpath: //span[@id='firstNameStatus'] text is Please enter your first name</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the last name error message "Please enter your last name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='lastNameStatus'] text should be Contains:Please enter your last name : Actual By.xpath: //span[@id='lastNameStatus'] text is Please enter your last name</div></div></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid email error message "Please enter a valid email address"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='emailAddressStatus'] text should be Contains:Please enter a valid email address : Actual By.xpath: //span[@id='emailAddressStatus'] text is Please enter a valid email address</div></div></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9822"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid phone number error message "Please enter a valid phone number"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='txtPhoneStatus'] text should be Contains:Please enter a valid phone number : Actual By.xpath: //span[@id='txtPhoneStatus'] text is Please enter a valid phone number</div></div></div>]]>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Recipe Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Get a random recipe name available</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter the recipe name in search box</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Click Search icon</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the recipes search result for particular recipe <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] visible : Actual By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] not visible <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div></div></div>]]>
     </line>
   </reporter-output>
-  <suite name="Web Demo Suite" duration-ms="101877" started-at="2018-10-27T03:45:02Z" finished-at="2018-10-27T03:46:43Z">
+  <suite name="Web Demo Suite" duration-ms="130412" started-at="2018-11-24T14:00:31Z" finished-at="2018-11-24T14:02:42Z">
     <groups>
-      <group name="@contactUs">
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Submit form with no details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9]" name="Submit form with no details" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Submit form with valid details in all fields()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" name="Submit form with valid details in all fields" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Submit form with valid details in required fields()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" name="Submit form with valid details in required fields" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Validate Name fields()[pri:1003, instance:com.qmetry.qaf.automation.step.client.Scenario@3eb]" name="Validate Name fields" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Validate Phone Number field()[pri:1005, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" name="Validate Phone Number field" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-        <method signature="src.main.resources.scenarios.ContactUs.feature.Validate email field()[pri:1004, instance:com.qmetry.qaf.automation.step.client.Scenario@3ec]" name="Validate email field" class="com.qmetry.qaf.automation.step.client.Scenario"/>
-      </group> <!-- @contactUs -->
+      <group name="@try">
+        <method signature="src.main.resources.scenarios.Recipes.feature.Search for Recipe()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" name="Search for Recipe" class="com.qmetry.qaf.automation.step.client.Scenario"/>
+      </group> <!-- @try -->
     </groups>
-    <test name="Web Scenarios Chrome Test" duration-ms="101877" started-at="2018-10-27T03:45:02Z" finished-at="2018-10-27T03:46:43Z">
+    <test name="Web Scenarios Chrome Test" duration-ms="130412" started-at="2018-11-24T14:00:31Z" finished-at="2018-11-24T14:02:42Z">
       <class name="com.qmetry.qaf.automation.step.client.Scenario">
-        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="setupSuit" is-config="true" duration-ms="20" started-at="2018-10-27T09:15:02Z" finished-at="2018-10-27T09:15:02Z">
+        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="setupSuit" is-config="true" duration-ms="29" started-at="2018-11-24T19:30:31Z" finished-at="2018-11-24T19:30:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuit -->
-        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="setupTest" is-config="true" duration-ms="6" started-at="2018-10-27T09:15:02Z" finished-at="2018-10-27T09:15:02Z">
+        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="setupTest" is-config="true" duration-ms="8" started-at="2018-11-24T19:30:31Z" finished-at="2018-11-24T19:30:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="setup" is-config="true" duration-ms="1" started-at="2018-10-27T09:15:02Z" finished-at="2018-10-27T09:15:02Z">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="setup" is-config="true" duration-ms="1" started-at="2018-11-24T19:30:31Z" finished-at="2018-11-24T19:30:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="setupMethod" is-config="true" duration-ms="2" started-at="2018-10-27T09:15:02Z" finished-at="2018-10-27T09:15:02Z">
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="setupMethod" is-config="true" duration-ms="2" started-at="2018-11-24T19:30:31Z" finished-at="2018-11-24T19:30:31Z">
           <params>
             <param index="0">
               <value>
@@ -75,469 +55,52 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method status="FAIL" signature="Submit form with valid details in required fields()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Submit form with valid details in required fields" name="Submit form with valid details in required fields" duration-ms="85387" started-at="2018-10-27T09:15:02Z" finished-at="2018-10-27T09:16:27Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)
-	at .Then Validate the success message "${success.message}" and "${thankyou.message}"(src/main/resources/scenarios/ContactUs.feature:11)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:296)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
-	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
-	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
-	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
-	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
-	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: unknown error: Unsupported locator strategy: xpath 
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-9GHEFCC', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\MULLAI~1\AppData\Local\Temp\scoped_dir7704_16679}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f958467296e70b1ac7b500bfde5a4256
-*** Element info: {Using=xpath , value= //span[@class='message']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:383)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementsByCustomStretegy(QAFExtendedWebDriver.java:547)
-	at com.qmetry.qaf.automation.ui.webdriver.ByCustom.findElements(ByCustom.java:63)
-	at org.openqa.selenium.By.findElement(By.java:159)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:171)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.getId(QAFExtendedWebElement.java:309)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.isDisplayed(QAFExtendedWebElement.java:329)
-	at com.culinarycircle.pages.ContactUsPage.validate_SuccessMessage(ContactUsPage.java:148)
-	at com.culinarycircle.steps.ContactUsStepDef.validate_SuccessMessage(ContactUsStepDef.java:194)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
-	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
-	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:781)
-	at org.testng.TestRunner.run(TestRunner.java:635)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	... 4 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="FAIL" signature="Search for Recipe()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="Search for Recipe" duration-ms="130201" started-at="2018-11-24T19:30:31Z" finished-at="2018-11-24T19:32:41Z">
           <reporter-output>
             <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the success message "Your message has been sent." and "THANK YOU!" <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)</div></div></div>]]>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Recipe Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Get a random recipe name available</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter the recipe name in search box</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Click Search icon</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the recipes search result for particular recipe <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] visible : Actual By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] not visible <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div></div></div>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Submit form with valid details in required fields -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:30Z" finished-at="2018-10-27T09:16:30Z">
+        </test-method> <!-- Search for Recipe -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-24T19:32:41Z" finished-at="2018-11-24T19:32:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=Submit form with valid details in required fields status=FAILURE method=src.main.resources.scenarios.ContactUs.feature.Submit form with valid details in required fields()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the success message "Your message has been sent." and "THANK YOU!" <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected condition failed: waiting for presence of element located by: [unknown locator] (tried for 15 second(s) with 1000 MILLISECONDS interval)</div></div></div>]]]>
+                <![CDATA[[TestResult name=Search for Recipe status=FAILURE method=src.main.resources.scenarios.Recipes.feature.Search for Recipe()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Recipe Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Get a random recipe name available</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter the recipe name in search box</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Click Search icon</div><div  class="teststepfail"><span class="teststepfail-label">T </span>Then Validate the recipes search result for particular recipe <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Expected By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] visible : Actual By.xpath: //ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')] not visible <a href="img/SearchForRecipe_11g2zcp9rq62e46706.png" target="_blank">[View Screenshot]</a> </div></div></div>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="afterClass" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:30Z" finished-at="2018-10-27T09:16:30Z">
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="afterClass" is-config="true" duration-ms="1" started-at="2018-11-24T19:32:41Z" finished-at="2018-11-24T19:32:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with no details" name="setup" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:30Z" finished-at="2018-10-27T09:16:30Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]" test-instance-name="Search for Recipe" name="afterTest" is-config="true" duration-ms="148" started-at="2018-11-24T19:32:42Z" finished-at="2018-11-24T19:32:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Submit form with no details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9]" test-instance-name="Submit form with no details" name="Submit form with no details" duration-ms="4964" started-at="2018-10-27T09:16:30Z" finished-at="2018-10-27T09:16:35Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div></div></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Submit form with no details -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with no details" name="setupMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:30Z" finished-at="2018-10-27T09:16:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with no details" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:35Z" finished-at="2018-10-27T09:16:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=Submit form with no details status=SUCCESS method=src.main.resources.scenarios.ContactUs.feature.Submit form with no details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInRequiredFields_pq6zxwfrdgv59535.png" target="_blank">[View Screenshot]</a> </div></div></div>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in all fields" name="setup" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:35Z" finished-at="2018-10-27T09:16:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with no details" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:35Z" finished-at="2018-10-27T09:16:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="FAIL" signature="Submit form with valid details in all fields()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Submit form with valid details in all fields" name="Submit form with valid details in all fields" duration-ms="1650" started-at="2018-10-27T09:16:35Z" finished-at="2018-10-27T09:16:37Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at .And Enter Shop "${shop name}"(src/main/resources/scenarios/ContactUs.feature:29)
-	at com.qmetry.qaf.automation.step.JavaStep.getObject(JavaStep.java:395)
-	at com.qmetry.qaf.automation.step.JavaStep.getPropValue(JavaStep.java:390)
-	at com.qmetry.qaf.automation.step.JavaStep.processArgs(JavaStep.java:236)
-	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:158)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
-	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
-	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Street Address "128, Maple Road"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter City "Minnesota"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Zipcode "55345"</div><div  class="teststepfail"><span class="teststepfail-label">T </span>And Enter Shop "${shop name}" <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>null</div></div><div  class="teststep"><span class="teststep-label">T </span>Then Enter Time of Occurence "${occurenceTime}"</div><div  class="teststep"><span class="teststep-label">T </span>And Enter Best Time to Contact "${contactTime}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Enter comments "${comments}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Validate the success message "${success.message}" and "${thankyou.message}"</div></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Submit form with valid details in all fields -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in all fields" name="setupMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:35Z" finished-at="2018-10-27T09:16:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in all fields" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:37Z" finished-at="2018-10-27T09:16:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=Submit form with valid details in all fields status=FAILURE method=src.main.resources.scenarios.ContactUs.feature.Submit form with valid details in all fields()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "QA"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "Web"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing@cub.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9988776655"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Street Address "128, Maple Road"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter City "Minnesota"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Zipcode "55345"</div><div  class="teststepfail"><span class="teststepfail-label">T </span>And Enter Shop "${shop name}" <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>null</div></div><div  class="teststep"><span class="teststep-label">T </span>Then Enter Time of Occurence "${occurenceTime}"</div><div  class="teststep"><span class="teststep-label">T </span>And Enter Best Time to Contact "${contactTime}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Enter comments "${comments}"</div><div  class="teststep"><span class="teststep-label">T </span>Then Validate the success message "${success.message}" and "${thankyou.message}"</div></div>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Name fields" name="setup" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:37Z" finished-at="2018-10-27T09:16:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in all fields" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:37Z" finished-at="2018-10-27T09:16:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Name fields" name="setupMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:37Z" finished-at="2018-10-27T09:16:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="Validate Name fields()[pri:1003, instance:com.qmetry.qaf.automation.step.client.Scenario@3eb]" test-instance-name="Validate Name fields" name="Validate Name fields" duration-ms="2207" started-at="2018-10-27T09:16:37Z" finished-at="2018-10-27T09:16:39Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "Web239"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "QA23"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate the first name error message "Please enter your first name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='firstNameStatus'] text should be Contains:Please enter your first name : Actual By.xpath: //span[@id='firstNameStatus'] text is Please enter your first name</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the last name error message "Please enter your last name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='lastNameStatus'] text should be Contains:Please enter your last name : Actual By.xpath: //span[@id='lastNameStatus'] text is Please enter your last name</div></div></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Validate Name fields -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Name fields" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:39Z" finished-at="2018-10-27T09:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=Validate Name fields status=SUCCESS method=src.main.resources.scenarios.ContactUs.feature.Validate Name fields()[pri:1003, instance:com.qmetry.qaf.automation.step.client.Scenario@3eb] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter First Name "Web239"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Last Name "QA23"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields. <a href="img/SubmitFormWithValidDetailsInAllFields_ubx0ajcgec309536.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate the first name error message "Please enter your first name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='firstNameStatus'] text should be Contains:Please enter your first name : Actual By.xpath: //span[@id='firstNameStatus'] text is Please enter your first name</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the last name error message "Please enter your last name"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='lastNameStatus'] text should be Contains:Please enter your last name : Actual By.xpath: //span[@id='lastNameStatus'] text is Please enter your last name</div></div></div>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate email field" name="setupMethod" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:39Z" finished-at="2018-10-27T09:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Name fields" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:39Z" finished-at="2018-10-27T09:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate email field" name="setup" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:39Z" finished-at="2018-10-27T09:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Validate email field()[pri:1004, instance:com.qmetry.qaf.automation.step.client.Scenario@3ec]" test-instance-name="Validate email field" name="Validate email field" duration-ms="1762" started-at="2018-10-27T09:16:39Z" finished-at="2018-10-27T09:16:41Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid email error message "Please enter a valid email address"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='emailAddressStatus'] text should be Contains:Please enter a valid email address : Actual By.xpath: //span[@id='emailAddressStatus'] text is Please enter a valid email address</div></div></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Validate email field -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate email field" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:41Z" finished-at="2018-10-27T09:16:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=Validate email field status=SUCCESS method=src.main.resources.scenarios.ContactUs.feature.Validate email field()[pri:1004, instance:com.qmetry.qaf.automation.step.client.Scenario@3ec] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Enter Email Address "qasvu_testing.com"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid email error message "Please enter a valid email address"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='emailAddressStatus'] text should be Contains:Please enter a valid email address : Actual By.xpath: //span[@id='emailAddressStatus'] text is Please enter a valid email address</div></div></div>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Phone Number field" name="setup" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:41Z" finished-at="2018-10-27T09:16:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Phone Number field" name="setupMethod" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:41Z" finished-at="2018-10-27T09:16:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate email field" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:41Z" finished-at="2018-10-27T09:16:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="Validate Phone Number field()[pri:1005, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Phone Number field" name="Validate Phone Number field" duration-ms="2321" started-at="2018-10-27T09:16:41Z" finished-at="2018-10-27T09:16:43Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9822"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid phone number error message "Please enter a valid phone number"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='txtPhoneStatus'] text should be Contains:Please enter a valid phone number : Actual By.xpath: //span[@id='txtPhoneStatus'] text is Please enter a valid phone number</div></div></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Validate Phone Number field -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Phone Number field" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-27T09:16:43Z" finished-at="2018-10-27T09:16:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=Validate Phone Number field status=SUCCESS method=src.main.resources.scenarios.ContactUs.feature.Validate Phone Number field()[pri:1005, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given Launch site "https://www.culinarycircle.com/"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Go to Contact Us Page</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Enter PhoneNumber "9822"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Click Submit Button</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then Validate the error message "Please fill in all required fields."</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@name='errorMessageGeneral'] text should be Contains:Please fill in all required fields. : Actual By.xpath: //span[@name='errorMessageGeneral'] text is Please fill in all required fields.</div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>And Validate invalid phone number error message "Please enter a valid phone number"</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected By.xpath: //span[@id='txtPhoneStatus'] text should be Contains:Please enter a valid phone number : Actual By.xpath: //span[@id='txtPhoneStatus'] text is Please enter a valid phone number</div></div></div>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Validate Phone Number field" name="afterClass" is-config="true" duration-ms="1" started-at="2018-10-27T09:16:43Z" finished-at="2018-10-27T09:16:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ed]" test-instance-name="Submit form with valid details in required fields" name="afterTest" is-config="true" duration-ms="114" started-at="2018-10-27T09:16:43Z" finished-at="2018-10-27T09:16:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59d016c9]]>
+                <![CDATA[org.testng.TestRunner@60d8c9b7]]>
               </value>
             </param>
           </params>

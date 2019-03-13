@@ -7,13 +7,12 @@
     <parameter name="driver.name" value="chromeDriver"/>
     <groups>
       <run>
-        <include name="@contactUs"/>
+        <include name="@try"/>
       </run>
     </groups>
     <classes>
       <class name="com.qmetry.qaf.automation.step.client.Scenario">
         <methods>
-          <include name="scenario"/>
           <include name="scenario"/>
           <include name="setupTest"/>
           <include name="setupSuit"/>

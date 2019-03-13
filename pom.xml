@@ -1,27 +1,23 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.qmetry</groupId>
-	<artifactId>culinarycircle</artifactId>
+	<artifactId>woe</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
-	<name>culinarycircle</name>
+	<name>woe</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<testngXmlDir>src/main/resources/config</testngXmlDir>
-		<testngXmlFile>Cub_Login.xml</testngXmlFile>
+		<testngXmlFile>woe.xml</testngXmlFile>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<reportium-sdk.version>1.2.0</reportium-sdk.version>
-		<selenium.version>2.53.1</selenium.version>
-		<testng.version>6.9.10</testng.version>
+		<reportium-sdk.version>2.2.1</reportium-sdk.version>
+		<testng.version>6.10</testng.version>
 		<cukes.version>1.2.5</cukes.version>
-		<qaf.version>2.1.13</qaf.version>
-		<qafsupport.version>2.1.13</qafsupport.version>
-		<quantum.version>1.14</quantum.version>
+		<qaf.version>2.1.14</qaf.version>
+		<qafsupport.version>2.1.14</qafsupport.version>
+		<quantum.version>1.19</quantum.version>
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -86,11 +82,15 @@
 		<repository>
 			<id>perfectomobile</id>
 			<name>Perfecto mobile</name>
-			<url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
+			<url>https://repo1.perfectomobile.com/public/repositories/maven</url>
 		</repository>
 		<repository>
 			<id>jai</id>
 			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+		</repository>
+		<repository>
+			<id>com.ibm.db2.jcc</id>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/public</url>
 		</repository>
 	</repositories>
 
@@ -116,30 +116,6 @@
 			<version>${cukes.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.qmetry</groupId>
-			<artifactId>qaf</artifactId>
-			<version>${qaf.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-remote-driver</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-api</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-java</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.qmetry</groupId>
-			<artifactId>qaf-support</artifactId>
-			<version>${qafsupport.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.quantum</groupId>
 			<artifactId>quantum-support</artifactId>
 			<version>${quantum.version}</version>
@@ -150,9 +126,15 @@
 			<version>${reportium-sdk.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.7</version>
+			<groupId>com.ibm.db2.jcc</groupId>
+			<artifactId>db2jcc4</artifactId>
+			<version>10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
 		</dependency>
 	</dependencies>
+
 </project>

@@ -5,7 +5,7 @@
     <method-selectors>
       <method-selector>
         <script language="beanshell">
-          <![CDATA[testngMethod.getMethodName().equalsIgnoreCase("Submit form with valid details in required fields")||testngMethod.getMethodName().equalsIgnoreCase("Submit form with valid details in all fields")]]>
+          <![CDATA[testngMethod.getMethodName().equalsIgnoreCase("Search for Recipe")]]>
         </script>
       </method-selector>
     </method-selectors>

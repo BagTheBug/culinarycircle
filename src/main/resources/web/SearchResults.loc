@@ -1,1 +1,4 @@
-searchResults.list = xpath=//ul[@class='results-list']/li/a"]
+searchResults.list = xpath=//ul[@class='results-list']/li/a
+Results.displayed=xpath=//ul[@class='results-list']/li/a[contains(text(),'%s')]
+
+searchResults.displayed=xpath=//ul[@class='results-list']/li/a[contains(translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOX')]

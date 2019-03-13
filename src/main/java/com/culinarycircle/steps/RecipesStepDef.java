@@ -36,7 +36,8 @@ public class RecipesStepDef {
 	}
 
 	/**
-	 * Gets random recipe name displayed to perform search
+	 * Gets random recipe name displayed to perform search And sets dynamic key
+	 * (String) "SearchKey"
 	 */
 	@QAFTestStep(description = "Get a random recipe name available")
 	public void get_RecipeAvailable() {
@@ -49,5 +50,18 @@ public class RecipesStepDef {
 	@QAFTestStep(description = "Validate the recipes search result for particular recipe")
 	public void validate_RecipeSearchResult_ForParticularRecipe() {
 		recipePage.validate_RecipeSearchResult();
+	}
+
+	/**
+	 * Selects a recipe randomly from recipe page
+	 */
+	@QAFTestStep(description = "Select a recipe from available recipes")
+	public void select_RecipeFromAvailableRecipes() {
+		recipePage.selectRecipeFromAvailableRecipes();
+	}
+
+	@QAFTestStep(description = "Validate the recipe details page")
+	public void validate_RecipeDetailsPage() {
+		recipePage.validate_RecipeDetailsPage();
 	}
 }

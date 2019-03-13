@@ -1,3 +1,4 @@
+@homePAge @navigation
 Feature: Navigation 
 Scenario: Home Page Navigation 
 	Given Launch site "${site.url}" 
